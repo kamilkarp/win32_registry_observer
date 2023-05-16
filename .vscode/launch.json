@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Flutter",
+            "cwd": "example",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Debug native",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/example/build/windows/runner/Debug/win32_registry_observer_example.exe",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "C/C++: cl.exe build and debug active file",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/example/build/windows/runner/Debug/win32_registry_observer_example.exe",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "stopAtEntry": false,
+            "environment": [],
+            "console": "externalTerminal",
+        }
+    ]
+}
