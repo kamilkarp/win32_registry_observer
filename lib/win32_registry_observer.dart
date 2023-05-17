@@ -73,6 +73,7 @@ class Win32RegistryObserver {
     }
 
     final currentObservers = previousObservers - 1;
+    _observersPerRequestMap[request] = currentObservers;
 
     if (currentObservers <= 0) {
       Win32RegistryObserverPlatform.instance.stopObservingRegistryKey(request);
